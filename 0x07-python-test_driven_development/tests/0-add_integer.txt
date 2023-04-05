@@ -17,20 +17,17 @@ that value is equivalent to using the ``+`` operator.
 	3
 
 	>>>add_integer(100, -2)
-
-    	98
+	98
 
 function can take one argument because another has been initialized
 
 	>>>add_integer(2)
-
-    	100
+	100
 
 the function also converts a floating point number into an integer 
 
 	>>>add_integer(100.3, -2)
-
-   	98
+	98
 
 How the function handle the non numbers and numbers as arguments
 ==============================================================
