@@ -1,0 +1,35 @@
+``say_my_name`` module
+======================
+
+Use ``say_my_name``
+-------------------
+
+Write a function that prints My name is <first name> <last name>
+
+    Prototype: def say_my_name(first_name, last_name=""):
+    first_name and last_name must be strings otherwise, raise a TypeError exception with the message first_name must be a string or last_name must be a string
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name("Collins", "Sinei")
+My name is Collins Sinei
+>>> say_my_name(None, "Sinei")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 4, in say_my_name
+TypeError: first_name must be a string or last_name must be a string
+>>> say_my_name("Collins", None)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 4, in say_my_name
+TypeError: first_name must be a string or last_name must be a string
+>>> say_my_name("Collins", 5)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 4, in say_my_name
+TypeError: first_name must be a string or last_name must be a string
+>>> say_my_name(5, "Sinei")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 4, in say_my_name
+TypeError: first_name must be a string or last_name must be a string
+>>>

@@ -19,6 +19,7 @@ Use
     >>> print(matrix_divided(matrix, 3))
     [[2.0, 3.0, 4.0], [5.0, 6.0, 7.0]]
 
+
 Quotients are rounded to a maximum of two decimal places.
 
 
