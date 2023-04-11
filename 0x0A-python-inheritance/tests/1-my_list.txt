@@ -1,11 +1,10 @@
 Test for 1-my_list.py
-==========================================
+-------------------------------------------
 
 case 0: import
 >>> MyList = __import__('1-my_list').MyList
 >>>
-
-=========================================
+-------------------------------------------
 
 case 1: common case
 
@@ -14,7 +13,7 @@ case 1: common case
 >>> my_list.append(4)
 >>> my_list.append(2)
 >>> my_list.append(3)
->>> my_list.append(6)
+>>> my_list.append(5)
 >>> print(my_list)
 [1, 4, 2, 3, 5]
 >>> my_list.print_sorted()
@@ -23,7 +22,7 @@ case 1: common case
 [1, 4, 2, 3, 5]
 >>>
 
-=========================================
+-------------------------------------------
 
 case 2: not defined object
 
@@ -34,21 +33,21 @@ Traceback (most recent call last):
 NameError: name 'my_list2' is not defined
 >>>
 
-========================================
+-------------------------------------------
 
 case 3: passed a list
 
->>> a = [1, 9, 5]
+>>> a = [1, 9, 4]
 >>> my_list = MyList(a)
 >>> my_list.print_sorted()
-[1, 5, 9]
+[1, 4, 9]
 >>>
 
 -------------------------------------------
 
 case 4: empty list
 
->>> b = []
+>>> a = []
 >>> my_list = MyList(a)
 >>> my_list.print_sorted()
 []
@@ -71,12 +70,12 @@ case 5: unique number
 case 6: same number
 
 >>> my_list2 = MyList()
->>> my_list2.append(2)
->>> my_list2.append(2)
->>> my_list2.append(2)
->>> my_list2.append(2)
+>>> my_list2.append(1)
+>>> my_list2.append(1)
+>>> my_list2.append(1)
+>>> my_list2.append(1)
 >>> my_list2.print_sorted()
-[2, 2, 2, 2]
+[1, 1, 1, 1]
 >>>
 
 -------------------------------------------
@@ -97,9 +96,9 @@ case 8: negative numbers
 >>> my_list = MyList()
 >>> my_list.append(5)
 >>> my_list.append(1)
->>> my_list.append(-2)
+>>> my_list.append(-1)
 >>> my_list.append(51)
 >>> my_list.append(-5)
 >>> my_list.print_sorted()
-[-5, -2, 1, 5, 51]
+[-5, -1, 1, 5, 51]
 >>>
